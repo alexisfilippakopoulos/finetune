@@ -1,0 +1,33 @@
+name: ftllm
+channels:
+  - conda-forge
+  - defaults
+dependencies:
+  - python=3.10
+  - pip
+  - cmake
+  - ninja
+  - git
+  - make
+  - pkg-config
+  - libffi
+  - openblas
+  - llvm-openmp
+  - gcc_linux-64
+  - gxx_linux-64
+  - pip:
+      - transformers
+      - accelerate
+      - datasets
+      - tokenizers
+      - sentencepiece
+      - safetensors
+      - huggingface_hub
+      - tqdm
+      - scipy
+      - scikit-learn
+      - pyarrow
+      - deepspeed==0.17.6
+      - vllm
+      - peft
+      - bitsandbytes
