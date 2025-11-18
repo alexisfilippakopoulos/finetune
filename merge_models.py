@@ -4,8 +4,8 @@ import torch
 import os
 
 base = "meta-llama/Llama-2-7b-hf"
-lora_model_path = "/kaggle/input/finetune-sentiment/pytorch/default/1/sentiment/amazon_1000"
-out_path = "/kaggle/working/finetune/saved_models/amazon_1000_merged"
+lora_model_path = "/kaggle/input/finetune-sentiment/pytorch/default/1/sentiment/amazon_100"
+out_path = "/kaggle/working/finetune/saved_models/amazon_100_merged"
 
 # load tokenizer (recommended) — helps keep tokenizer & embeddings in sync
 tokenizer = AutoTokenizer.from_pretrained(base, use_fast=False)
